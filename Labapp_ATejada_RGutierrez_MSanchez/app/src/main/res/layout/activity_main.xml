@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Calculadora Con Spinner"
+        android:gravity="center"
+        android:textSize="30dp"
+        android:layout_marginTop="10dp"/>
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Introduzca el primer Numero"
+        android:inputType="number"
+        android:id="@+id/txtnum1"
+        android:layout_marginTop="10dp"
+        android:layout_below="@id/title"/>
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:inputType="number"
+        android:hint="Introduzca el segundo Numero"
+        android:id="@+id/txtnum2"
+        android:layout_below="@id/txtnum1"
+        android:layout_marginTop="10dp"
+        />
+
+    <Spinner
+        android:id="@+id/listaOperaciones"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:textsize="20dp"
+        android:layout_below="@id/txtnum2"
+        android:layout_marginTop="10dp"/>
+
+
+    <CheckBox
+        android:id="@+id/cheResultado"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Mostrar el resultado"
+        android:textSize="20dp"
+        android:layout_below="@id/listaOperaciones"
+        android:layout_marginTop="10dp"/>
+
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="150dp"
+        android:onClick="OpsChespinner"
+        android:text="Calcular"
+        android:textSize="19dp"
+        android:layout_below="@id/cheResultado"
+        android:layout_marginTop="10dp"/>
+
+</RelativeLayout>
